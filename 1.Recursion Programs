@@ -1,0 +1,15 @@
+## Recursion Countdown (5 4 3 2 1)
+#include<bits/stdc++.h>
+using namespace std;
+void recursionn(int n){
+    if(n==0){
+        return;
+    }
+    cout<<n<<" ";
+    recursionn(n-1);
+}
+int main(){
+    int n;
+    cin>>n;
+    recursionn(n);
+}
