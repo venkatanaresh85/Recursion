@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+void recursionn(int n){
+    if(n==0){
+        return;
+    }
+    recursionn(n-1);
+    cout<<n<<" ";
+   
+}
+int main(){
+    int n;
+    cin>>n;
+    recursionn(n);
+}
