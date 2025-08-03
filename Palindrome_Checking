@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+void Reversall(string& s,int l,int r){
+   if(l<r){
+       swap(s[l],s[r]);
+       Reversall(s,l+1,r-1);
+   }
+}
+int main(){
+    string s;
+    cin>>s;
+    string t=s;
+    int l=0;
+    int r=s.size()-1;
+    Reversall(s,l,r);
+    if(s==t){
+        cout<<"Arey idhi palindrome ra babu kavalante google lo search cheskoo";
+    }
+    else
+    cout<<"Arey idhi palindrome kadhur okasari check cheskoni palindrome number enter chey ra babuu";
+    
+}
